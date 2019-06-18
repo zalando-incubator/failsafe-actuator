@@ -12,7 +12,7 @@ import java.util.function.Consumer;
 
 import static java.util.stream.Collectors.toMap;
 
-@Endpoint(id = "circuit-breakers")
+@Endpoint(id = "circuitbreakers")
 public class CircuitBreakersEndpoint {
 
     private final Map<String, CircuitBreaker> breakers;

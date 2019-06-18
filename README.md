@@ -73,12 +73,12 @@ public class MyBean {
 }
 ```
 
-That's it. By calling the [endpoint](http://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html) via _**http://${yourAddress}/actuator/circuit-breakers**_.
+That's it. By calling the [endpoint](http://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html) via _**http://${yourAddress}/actuator/circuitbreakers**_.
 you will get a response which looks like the following:
 
 
 ```http
-GET /actuator/circuit-breakers
+GET /actuator/circuitbreakers
 
 HTTP/1.1 200
 Content-Type: application/json
@@ -93,10 +93,10 @@ Content-Type: application/json
 }
 ```
 
-Individual circuit breakers can be requested via `/acutuator/circuit-breakers/{name}`:
+Individual circuit breakers can be requested via `/acutuator/circuitbreakers/{name}`:
 
 ```http
-GET /actuator/circuit-breakers/myBreaker
+GET /actuator/circuitbreakers/myBreaker
 
 HTTP/1.1 200
 Content-Type: application/json
@@ -109,7 +109,7 @@ Content-Type: application/json
 You can even modify the circuit breaker state and manually open or close them:
 
 ```http
-POST /actuator/circuit-breakers/myBreaker
+POST /actuator/circuitbreakers/myBreaker
 Content-Type: application/json
 
 {

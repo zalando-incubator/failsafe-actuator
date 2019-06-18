@@ -29,7 +29,7 @@ public class EmptyCircuitBreakersEndpointTest {
     }
 
     private Container readAll() {
-        return http.exchange("/actuator/circuit-breakers", GET, EMPTY, Container.class).getBody();
+        return http.exchange("/actuator/circuitbreakers", GET, EMPTY, Container.class).getBody();
     }
 
 }

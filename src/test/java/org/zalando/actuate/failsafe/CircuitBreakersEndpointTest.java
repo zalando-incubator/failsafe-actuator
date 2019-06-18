@@ -98,16 +98,16 @@ public class CircuitBreakersEndpointTest {
     }
 
     private Container readAll() {
-        return http.exchange("/actuator/circuit-breakers", GET, EMPTY, Container.class).getBody();
+        return http.exchange("/actuator/circuitbreakers", GET, EMPTY, Container.class).getBody();
     }
 
     private CircuitBreakerView readOne(final String name) {
-        return http.getForObject("/actuator/circuit-breakers/{name}",
+        return http.getForObject("/actuator/circuitbreakers/{name}",
                 CircuitBreakerView.class, name);
     }
 
     private CircuitBreakerView write(final String test, final CircuitBreaker.State state) {
-        return http.postForObject("/actuator/circuit-breakers/{name}",
+        return http.postForObject("/actuator/circuitbreakers/{name}",
                 new CircuitBreakerView(state), CircuitBreakerView.class, test);
     }
 
