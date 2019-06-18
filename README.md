@@ -120,8 +120,8 @@ Content-Type: application/json
 ## Example usage
 
 To see a complete example on how to use the library take a look at the
-[Sample Application](src/test/java/org/zalando/failsafeactuator/SampleApplication.java).
-It starts a [Rest Controller](src/test/java/org/zalando/failsafeactuator/SampleController.java)
+[Sample Application](https://github.com/zalando/failsafe-actuator/blob/master/src/test/java/org/zalando/actuate/failsafe/SampleApplication.java).
+It starts a [Rest Controller](https://github.com/zalando/failsafe-actuator/blob/master/src/test/java/org/zalando/actuate/failsafe/SampleController.java)
 that shows how to autowire `CircuitBreaker` into your application
 and configure them.
 
